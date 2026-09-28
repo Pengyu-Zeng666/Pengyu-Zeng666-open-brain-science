@@ -68,22 +68,21 @@ summary{cursor:pointer;color:var(--sub);font-weight:500}
 
 .headright{display:flex;align-items:center;gap:16px}
 .roadmap ol{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:4px}
-.roadmap li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
-.roadmap li h3{margin:0 0 2px;font-size:.95rem}
-.roadmap li p{margin:0;font-size:.875rem;color:var(--sub);line-height:1.55}
+.roadmap ol>li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.roadmap ol>li h3{margin:0 0 2px;font-size:.95rem}
+.roadmap ol>li p{margin:0;font-size:.875rem;color:var(--sub);line-height:1.55}
 .roadmap .step{flex:none;width:26px;height:26px;border-radius:50%;background:var(--muted);color:var(--text);font-size:.8rem;font-weight:600;display:grid;place-items:center}
 
-.roadmap .invite{margin:0;padding-top:14px;border-top:1px solid var(--line);font-size:.875rem}
 
 /* Co-creation invitation */
-.contribute{margin-top:40px;display:flex;gap:32px;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px 32px}
-.contribute h2{font-size:1.25rem;margin:6px 0 8px}
-.contribute p{margin:0 0 10px;color:var(--sub);max-width:60ch}
-.contribute ul{margin:0 0 18px;padding-left:18px;list-style:disc;color:var(--sub);font-size:.9rem;display:grid;gap:4px}
+.contribute{display:flex;gap:28px;align-items:center;justify-content:space-between;background:var(--muted);border-radius:10px;padding:22px 24px}
+.contribute h2{font-size:1.05rem;margin:4px 0 6px}
+.contribute p{margin:0 0 8px;color:var(--sub);font-size:.875rem}
+.contribute ul{margin:0 0 16px;padding-left:18px;list-style:disc;color:var(--sub);font-size:.85rem;display:grid;gap:4px}
 .repo-link{display:inline-block;background:var(--primary);color:var(--primary-foreground);padding:8px 16px;border-radius:8px;font-size:.875rem;font-weight:500}
 .repo-link:hover{text-decoration:none;opacity:.9}
 .contribute figure{margin:0;flex:none;text-align:center}
-.contribute figure img{display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+.contribute figure img{display:block;width:124px;height:124px;border:1px solid var(--line);border-radius:8px;background:#fff}
 .contribute figcaption{margin-top:8px;font-size:.75rem;color:var(--sub)}
 
 /* Compare: fact table + two simple charts */
@@ -126,5 +125,5 @@ summary{cursor:pointer;color:var(--sub);font-weight:500}
 
 footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line)}
 
-@media(max-width:800px){header span{display:none}.contribute{flex-direction:column;align-items:flex-start;padding:22px}.workspace{grid-template-columns:1fr}aside{position:static}.cards{grid-template-columns:1fr}.viz-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr}.bar-note{grid-column:auto}.shell{padding:0 16px}.chat{padding:18px}.message.user{max-width:100%}}
+@media(max-width:800px){header span{display:none}.contribute{flex-direction:column;align-items:flex-start;padding:18px}.workspace{grid-template-columns:1fr}aside{position:static}.cards{grid-template-columns:1fr}.viz-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr}.bar-note{grid-column:auto}.shell{padding:0 16px}.chat{padding:18px}.message.user{max-width:100%}}
 @media(prefers-reduced-motion:no-preference){button{transition:background-color .15s,border-color .15s}}

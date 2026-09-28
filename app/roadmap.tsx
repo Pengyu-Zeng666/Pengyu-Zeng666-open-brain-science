@@ -1,6 +1,6 @@
 "use client";
 import {Button} from '@/components/ui/button';
-import {repoUrl} from './contribute';
+import Contribute from './contribute';
 import {Dialog,DialogTrigger,DialogContent,DialogHeader,DialogTitle,DialogDescription} from '@/components/ui/dialog';
 
 // Planned directions only; none of these ship in the current version.
@@ -14,13 +14,13 @@ const plans=[
 export default function Roadmap(){
   return <Dialog>
     <DialogTrigger asChild><Button variant="outline" size="sm">Roadmap</Button></DialogTrigger>
-    <DialogContent className="roadmap sm:max-w-xl">
+    <DialogContent className="roadmap max-h-[90vh] overflow-y-auto sm:max-w-2xl">
       <DialogHeader>
         <DialogTitle>Future directions</DialogTitle>
         <DialogDescription>Where Open Brain Science is heading. These features are planned and not yet available.</DialogDescription>
       </DialogHeader>
       <ol>{plans.map((p,i)=><li key={p.title}><span className="step">{i+1}</span><div><h3>{p.title}</h3><p>{p.body}</p></div></li>)}</ol>
-      <p className="invite">Want to help build any of these? <a href={repoUrl} target="_blank" rel="noreferrer">Join us on GitHub ↗</a></p>
+      <Contribute/>
     </DialogContent>
   </Dialog>;
 }
