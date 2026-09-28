@@ -11,7 +11,11 @@
     "url": "https://www.nitrc.org/projects/us200_cn200/",
     "access": "Accessible",
     "comment": null,
-    "id": 0
+    "id": 0,
+    "total": 200,
+    "male": 79,
+    "female": 121,
+    "age": null
   },
   {
     "name": "NTU-CBT",
@@ -25,7 +29,11 @@
     "url": null,
     "access": "Inaccessible",
     "comment": "Prof. Chen is one of the co-author",
-    "id": 1
+    "id": 1,
+    "total": 102,
+    "male": 55,
+    "female": 47,
+    "age": null
   },
   {
     "name": "Chinese2020",
@@ -39,7 +47,11 @@
     "url": "http://www.chinese-brain-atlases.org/",
     "access": "Inaccessible",
     "comment": "There is a website but link does not work",
-    "id": 2
+    "id": 2,
+    "total": 2020,
+    "male": null,
+    "female": null,
+    "age": null
   },
   {
     "name": "INDIAN-157",
@@ -53,7 +65,11 @@
     "url": "Availabe at AFNI",
     "access": null,
     "comment": null,
-    "id": 3
+    "id": 3,
+    "total": 157,
+    "male": 98,
+    "female": 59,
+    "age": null
   },
   {
     "name": "Chinese-56",
@@ -67,7 +83,11 @@
     "url": "https://loni.usc.edu/research/atlas_downloads",
     "access": "Accessible",
     "comment": "Male participants only\nhdr file provided only, and the template was shifted",
-    "id": 4
+    "id": 4,
+    "total": 56,
+    "male": 56,
+    "female": 0,
+    "age": null
   },
   {
     "name": "KNE200",
@@ -81,7 +101,11 @@
     "url": null,
     "access": null,
     "comment": null,
-    "id": 5
+    "id": 5,
+    "total": 200,
+    "male": 100,
+    "female": 100,
+    "age": "Over 60"
   },
   {
     "name": "KNE96",
@@ -95,7 +119,11 @@
     "url": null,
     "access": null,
     "comment": null,
-    "id": 6
+    "id": 6,
+    "total": 96,
+    "male": 48,
+    "female": 48,
+    "age": null
   },
   {
     "name": "ChineseChildren",
@@ -109,7 +137,11 @@
     "url": "http://jerlab.psych.sc.edu/NeurodevelopmentalMRIDatabase/ChineseChildren).",
     "access": "Inaccessible",
     "comment": null,
-    "id": 7
+    "id": 7,
+    "total": null,
+    "male": null,
+    "female": null,
+    "age": null
   },
   {
     "name": "SRPBS Multi-disorder Dataset",
@@ -123,7 +155,11 @@
     "url": "No templet",
     "access": "Accessible",
     "comment": "resting-state fMRI and structural images of the brain",
-    "id": 8
+    "id": 8,
+    "total": 1514,
+    "male": 955,
+    "female": 670,
+    "age": "Mean 38.1 (SD 14.7)"
   },
   {
     "name": "Southwest University Adult Lifespan Dataset (SALD)",
@@ -137,6 +173,10 @@
     "url": "We shared the code we used in the quality assessment (QA), voxel-based volume and functional connectivity analyses, and it is freely available on GitHub (https://github.com/Zhuang2KX/SALD).",
     "access": "Accessible",
     "comment": "structural MRI and resting-state functional MRI.",
-    "id": 9
+    "id": 9,
+    "total": 494,
+    "male": 187,
+    "female": 308,
+    "age": "19–80"
   }
 ]
