@@ -1,5 +1,6 @@
 "use client";
 import {Button} from '@/components/ui/button';
+import {repoUrl} from './contribute';
 import {Dialog,DialogTrigger,DialogContent,DialogHeader,DialogTitle,DialogDescription} from '@/components/ui/dialog';
 
 // Planned directions only; none of these ship in the current version.
@@ -19,6 +20,7 @@ export default function Roadmap(){
         <DialogDescription>Where Open Brain Science is heading. These features are planned and not yet available.</DialogDescription>
       </DialogHeader>
       <ol>{plans.map((p,i)=><li key={p.title}><span className="step">{i+1}</span><div><h3>{p.title}</h3><p>{p.body}</p></div></li>)}</ol>
+      <p className="invite">Want to help build any of these? <a href={repoUrl} target="_blank" rel="noreferrer">Join us on GitHub ↗</a></p>
     </DialogContent>
   </Dialog>;
 }
