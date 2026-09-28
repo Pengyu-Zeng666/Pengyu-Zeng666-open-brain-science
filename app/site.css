@@ -66,6 +66,13 @@ dd{margin:0}
 details{margin-top:16px;font-size:.85rem;border-top:1px solid var(--line);padding-top:12px}
 summary{cursor:pointer;color:var(--sub);font-weight:500}
 
+.headright{display:flex;align-items:center;gap:16px}
+.roadmap ol{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:4px}
+.roadmap li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.roadmap li h3{margin:0 0 2px;font-size:.95rem}
+.roadmap li p{margin:0;font-size:.875rem;color:var(--sub);line-height:1.55}
+.roadmap .step{flex:none;width:26px;height:26px;border-radius:50%;background:var(--muted);color:var(--text);font-size:.8rem;font-weight:600;display:grid;place-items:center}
+
 /* Compare: fact table + two simple charts */
 :root{--series-1:#2a78d6;--series-2:#eb6834}
 @media(prefers-color-scheme:dark){:root{--series-1:#3987e5;--series-2:#d95926}}
@@ -106,5 +113,5 @@ summary{cursor:pointer;color:var(--sub);font-weight:500}
 
 footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line)}
 
-@media(max-width:800px){.workspace{grid-template-columns:1fr}aside{position:static}.cards{grid-template-columns:1fr}.viz-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr}.bar-note{grid-column:auto}.shell{padding:0 16px}.chat{padding:18px}.message.user{max-width:100%}}
+@media(max-width:800px){header span{display:none}.workspace{grid-template-columns:1fr}aside{position:static}.cards{grid-template-columns:1fr}.viz-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:1fr}.bar-note{grid-column:auto}.shell{padding:0 16px}.chat{padding:18px}.message.user{max-width:100%}}
 @media(prefers-reduced-motion:no-preference){button{transition:background-color .15s,border-color .15s}}
