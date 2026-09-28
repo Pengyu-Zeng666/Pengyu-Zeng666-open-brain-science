@@ -4,7 +4,7 @@ A research resource advisor for East Asian neuroimaging. It helps researchers fi
 
 ## Features
 
-- **AI advisor**: describe your study and get up to three recommendations from the catalog, each with its fit and limitations. You bring your own OpenAI, Claude or Gemini API key. The key is held only in page memory and is never stored.
+- **AI advisor**: describe your study and get up to three recommendations from the catalog, each with its fit and limitations. You bring your own OpenAI, Claude or Gemini API key. The key is held only in page memory and is sent straight from your browser to that provider; it never touches a server of ours.
 - **Explore**: search and filter the resources by population, resource type and access status.
 - **Compare**: put up to three resources side by side.
 
@@ -21,10 +21,21 @@ npm run dev
 
 Then open http://localhost:5173.
 
+## Deploy
+
+The live site is served by GitHub Pages from the `gh-pages` branch. To publish your latest changes, run:
+
+```bash
+npm run deploy:pages
+```
+
+This builds a static version into `dist-pages/` and pushes it to `gh-pages`.
+
 ## Project layout
 
 - `app/page.tsx`: the user interface
-- `app/api/recommend/route.ts`: forwards requests to the selected AI provider and validates its answers against the catalog
+- `lib/recommend.ts`: calls the selected AI provider from the browser and validates its answers against the catalog
+- `pages/`: entry point for the static GitHub Pages build
 - `app/catalog.json`: the resource records
 - `app/site.css`: page styles
 
